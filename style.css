@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/*font-family: 'Raleway', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+body{
+    margin: 0 auto;
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86%;
+    min-height: 100vh;
+}
+
+.content{
+    text-align: center;
+    width: 100%;
+}
+
+/*LOGO AND ICONS DIV*/
+
+.logo-icons{
+    margin: 0 auto 1rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 100px 10px 10px;
+    max-width: 350px;
+}
+
+.logo{
+    margin-bottom: 2rem;
+}
+
+.icons{
+    width: 12.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-container{
+    min-height: 3.5rem;
+    max-height: 3.5rem;
+    max-width: 3.5rem;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    padding: 1rem;
+    
+}
+
+/*TEXT AND FILL-BAR DIV*/
+
+h1, p{
+    color: hsl(243, 100%, 93%);
+    font-weight: 400;
+    
+}
+
+span, p, h2, h3{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 2.7rem;
+}
+
+h3{
+    color: hsl(229, 7%, 55%);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.storage-info{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2.3rem 2rem 4rem;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    max-width: 540px;
+}
+
+.space-remaining-text{
+    margin-bottom: 1.5rem;
+
+}
+
+.bar-container{
+    margin-bottom: 0.5rem;
+    background-color:  hsl(229, 57%, 11%);
+    display: flex;
+    align-items: center;
+    height: 1.3rem;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.bar-filler{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0rem 0.2rem;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 1rem;
+    width: 75%;
+    border-radius: 50px;
+}
+
+.bar-circle{
+    margin-right: 0.2rem;
+    background-color: hsl(243, 100%, 93%);
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+}
+
+.bar-subtext{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.min-GB, .max-GB{
+    font-size: 0.9rem;
+}
+
+/*SPEECH BUBBLE DIV*/
+
+.gb-bubble{
+    position: relative;
+    z-index: 1;
+    margin: -3rem auto 0;
+    padding: 1rem 1rem;
+    max-width: 13rem;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    
+}
+
+@media screen and (min-width: 1048px){
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:  hsl(229, 57%, 11%);
+        background-image: url(images/bg-desktop.png);
+        background-size: 100%;
+        background-position-y: 27rem;
+        width: 64%;
+        min-height: 114vh;
+    }
+    
+    .content{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        text-align: left;
+        width: 100%;
+    }
+    
+    /*LOGO AND ICONS DIV*/
+    
+    .logo-icons{
+        margin: 0;
+        margin-right: 2.5rem;
+        width: 100%;
+    }
+    
+    /*TEXT AND FILL-BAR DIV*/
+    
+    .storage-info{
+        margin: 0;
+        margin-right: -10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5.5rem 2rem;
+        border-radius: 10px;
+        width: 100%;
+        max-height: 100px;
+    }
+    
+    .min-GB, .max-GB{
+        font-size: 0.9rem;
+    }
+    
+    /*SPEECH BUBBLE DIV*/
+
+    .gb-bubble{
+        z-index: 2;
+        margin: 0;
+        margin-right: 3rem;
+        margin-left: -6rem;
+        padding: 1rem 1rem;
+        width: 13rem;
+        max-width: 13rem;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-self: first baseline;
+        border-radius: 10px 10px 0 10px;
+    }
+
+    .baloon-tip {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 0rem 0rem -1.5rem;
+        margin-right: -2rem;
+        width: 4rem;
+        height: 2rem;
+        background-image:
+          linear-gradient(to bottom left, hsl(0, 0%, 100%) 50%, transparent 0);
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+        background-position: left, right;
+      }
+
+    h3{
+        padding-left: 1rem;
+    }
+
+}
+
+/*
+To draw a triangle and control which side is shown (mine is inverted)!
+
+.triangle {
+  width: 300px;
+  height: 300px;
+  background-image:
+    linear-gradient(to bottom right, transparent 50%, red 0),
+    linear-gradient(to top right, red 50%, transparent 0);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: left, right;
+}
+*/
